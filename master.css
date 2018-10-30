@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FFFAFA;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+html {
+  height: 100%;
+  position: relative;
+}
+/* styling background and shape of navbar */
+.navbar {
+  width:100%;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #DC3D24;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+/* styling buttons */
+.navbar a {
+  float: left;
+  text-align: center;
+  color: white;
+  padding: 10px 10px;
+  font-weight: bolder;
+  text-decoration: none;    /* keeping the text clean */
+  width: 100px;             /* Width of the buttons */
+  margin: 10px;             /* space around the buttons */
+  border-radius: 30px;      /* roundify the corners of the buttons */
+  background-color: #DC3D24;
+  border: 5px solid transparent;
+}
+/* adding border on hover */
+.navbar a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #e0503a;
+}
+/* white border around active*/
+.navbar a.active {
+  background-color: #e0503a;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 5px solid white
+}
+/* centering center navbar links */
+.navbar-center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* right-aligned links*/
+.navbar-right {
+  float: right;
+}
+/* left-aligned links automatically in correct location*/
+
+/* Main body card */
+.content {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* adding shadowed edges */
+  max-width: 960px;       /* width of page */
+  margin: auto;           /* centering page */
+  height: 100vh;          /* making page extend to bottom of viewport */
+}
+
+.content img {            /* Snake image */
+  padding-top: 70px;      /* height of navbar */
+  object-fit: cover;      /* crops image */
+  width: 960px;
+  height: 300px;
+}
+/* footer */
+.footer {
+  position: absolute;     /* stays at the bottom */
+  bottom: 0px;            /* placing at the bottom */
+  width: 100%;            /* width of the page */
+  height: 200px;
+  background-color: #3C3C3C;
+  text-align: center;
+  font-size: 11px;
+}
